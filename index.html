@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list  my frist project</title>
-    <link rel="stylesheet" href="index.css"/>
+    <title>Weather App using html css & js</title>
+    <link rel="stylesheet" href="script.css">
 </head>
 <body>
     <div class="app">
-        <h1>To-do List</h1>
-   
-    <form class="todo-form">
-        <input type="text" id="todo-input" placeholder="Enter a task..." required> 
-        <button type="submit">Add</button>
-    </form>
-    <ul id="todo-list"></ul>
-     </div>
-     <script src="script.js"></script>
+        <h1>Weather App</h1>
+        <from id="weather-form">
+            <input type="text" id="city-input" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </from>
+        <div id="weather-result" class="weather-card hidden">
+            <h2 id="city-name"></h2>
+            <p id="temp"></p>
+            <p id="descr"></p>
+            <img src="logo.png" alt="weather icon" id="icon">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
